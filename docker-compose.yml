@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  cel:
+    build: .
+    environment:
+      ENV: development
+    ports:
+      - "80:80"
+    volumes:
+      - "./src:/src"
